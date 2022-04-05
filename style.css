@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+}
+
+:root {
+    --Softblue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --White: hsl(0, 0%, 100%);
+    --Verydarkbluem: hsl(217, 54%, 11%);
+    --Verydarkbluec: hsl(216, 50%, 16%);
+    --Verydarkblue: hsl(215, 32%, 27%);
+}
+
+body {
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+    background: var(--Verydarkbluem);
+
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 150px auto;
+}
+
+.container {
+    margin-left: 5px;
+    max-width: 365px;
+    padding: 25px 25px;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: left;
+    background-color: var(--Verydarkbluec);
+    box-shadow: 0px 0px 10px 0px;
+}
+
+img {
+    z-index: 0;
+    position: relative;
+    width: 100%;
+    margin: 10px auto;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.eye-container {
+    position: absolute;
+    margin: 10px auto;
+    width: 360px;
+    height: 360px;
+    border-radius: 10px;
+    z-index: 1;
+    background-color: var(--Cyan);
+    opacity: 0;
+}
+
+.eye {
+    z-index: 6;
+    width: 50px;
+    height: 50px;
+    top: 145px;
+    left: 155px;
+    opacity: 0;
+    color: var(--White);
+    position: absolute;
+}
+
+.eye-container:hover {
+    opacity: 0.6;
+    transition: 2s ease-in-out;
+}
+
+.eye:hover {
+    opacity: 1;
+
+}
+
+
+h1 {
+    margin-top: 30px;
+    font-size: 25px;
+    color: var(--White);
+    font-weight: 600;
+}
+
+h1:hover {
+    cursor: pointer;
+    color: var(--Cyan);
+}
+
+.container p {
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5em;
+    color: var(--Softblue);
+}
+
+.date {
+    display: flex;
+    flex-direction: row;
+    width: 310px;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: -12px;
+
+}
+
+.price,
+.time {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 120px;
+    margin-right: -50px;
+    margin-bottom: 20px;
+}
+
+.icon-ethereum {
+    width: 15px;
+    height: 25px;
+}
+
+.container h2 {
+    color: var(--Cyan);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+.icon-clock {
+    width: 20px;
+}
+
+.time p {
+    font-weight: 300;
+    font-size: 18px;
+    margin-top: 0;
+    margin-left: 5px;
+}
+
+.avatar {
+    border-top: 1px solid var(--Softblue);
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+
+}
+
+.avatar img {
+    width: 37px;
+    border: 1px solid var(--Softblue);
+    border-radius: 50%;
+    margin-left: 4px;
+}
+
+.avatar p {
+    font-size: 20px;
+    margin-top: 4px;
+    margin-right: 80px;
+    color: var(--Softblue);
+}
+
+.avatar span {
+    color: var(--White);
+
+}
+
+.avatar span:hover {
+    cursor: pointer;
+    color: var(--Cyan);
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
